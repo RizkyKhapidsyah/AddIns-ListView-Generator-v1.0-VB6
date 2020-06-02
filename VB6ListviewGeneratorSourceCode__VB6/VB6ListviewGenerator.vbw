@@ -1,0 +1,13 @@
+frmAddIn = 66, 87, 553, 517, Z, 44, 58, 531, 488, C
+Connect = 0, 587, 1036, 1216, , 66, 87, 739, 699, C
+modComboBox = 901, 508, 1037, 547, 
+modDatabase = 0, 443, 1036, 482, 
+modConnectionString = 330, 530, 1366, 580, 
+modStringTable = 0, 559, 1036, 598, 
+modRegistry = 1230, 699, 1366, 738, 
+modCode = 154, 203, 632, 629, 
+modControlDefinitions = 0, 527, 1036, 566, 
+modVBIDE = 110, 145, 584, 571, 
+modAPI = 0, 0, 491, 433, 
+clsToolTips = 0, 0, 556, 429, 
+clsTooltip = 0, 0, 519, 433, 

@@ -1,0 +1,4 @@
+CommandButton=Caption=E&xit,Top=180,Left=180,Height=360,Index=0,Name=cmdCommand
+
+PictureBox=Align=2,BorderStyle=0,Height=735
+SetContainer=Picture1,cmdCommand(0)

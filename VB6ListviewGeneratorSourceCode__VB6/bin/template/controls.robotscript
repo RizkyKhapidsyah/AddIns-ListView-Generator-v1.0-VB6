@@ -1,0 +1,53 @@
+// -- HEADER -------------------------------------------------------------------------------------------
+// -- contoh menambahkan OCX third party ke dalam ToolBox VB6
+//InsertOCX=ARTitleBar32.ARCompanyLine
+
+// -- banyak yang belum diimplementasikan, atau Anda sendiri yang membuatnya dengan selera
+// -- bahasa Anda sendiri, di antaranya:
+// InsertDLL= menambah reference dll seperti ;Microsoft ActiveX Data Object 2.8 Library' dan lain-lain
+// SpaceTop= margin atas penempatan object
+// SpaceLeft= margin kiri penempatan object
+// SpaceRight= margin kanan penempatan object
+// SpaceBottom= margin bawah penempatan object
+// SpaceBetween= kerenggangan TextBox atau label
+// dan lain-lain -- silakan Anda kembangkan bahasa sendiri dengan menggunakan logika percabangan
+// (branching) agar layak untuk digunakan
+
+//------------------------------------------------------------------------------------------------------
+// -- http://khoiriyyah.blogspot.com
+//-- Coder: K4r1m
+// menjelaskan mengenai cara membuat sebuah compiler GUI sederhana
+// sehingga bisa dibuat sebuah template atau style yang digunakan untuk generator code
+//------------------------------------------------------------------------------------------------------
+
+// -- menambah control/object serta memodifikasi property-property yang dibutuhkan
+//TextBox=Width=5295,Top=660,Height=2805,Left=1440,Text=Cool.
+//ComboBox=Text=Bagaimana?,Width=5295,Top=180,Left=1440
+
+//Public Const COMMAND_FORM_ADD As Integer = 0
+//Public Const COMMAND_FORM_EDIT As Integer = 1
+//Public Const COMMAND_FORM_SAVE As Integer = 2
+//Public Const COMMAND_FORM_CANCEL As Integer = 3
+//Public Const COMMAND_FORM_DELETE As Integer = 4
+//Public Const COMMAND_FORM_EXIT As Integer = 5
+//Public Const COMMAND_FORM_COLLAPSE As Integer = 6
+//Public Const COMMAND_FORM_REFRESH As Integer = 7
+
+CommandButton=Caption=&Add,Top=180,Left=180,Height=360,Index=0,Name=cmdCommand
+CommandButton=Caption=&Edit,Top=180,Left=1440,Height=360,Index=1,Name=cmdCommand
+CommandButton=Caption=&Delete,Top=180,Left=2700,Height=360,Index=4,Name=cmdCommand
+CommandButton=Caption=E&xit,Top=180,Left=5700,Height=360,Index=5,Name=cmdCommand
+
+PictureBox=Align=2,BorderStyle=0,Height=735
+SetContainer=Picture1,cmdCommand(0),cmdCommand(1),cmdCommand(4),cmdCommand(5)
+
+//Contoh memasukan references
+
+// -- menambah control third party serta memodifikasi property-property yang dibutuhkan
+//ARTitleBar32.ARCompanyLine=CompanyName=khoiriyyah.blogspot.com,Left=-5,Width=7050,Top=3540
+
+
+// --- memodifikasi property Form
+Form=Width=8055
+
+// --- End Template ------------------------------------------------------------------------------------
